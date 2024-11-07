@@ -50,9 +50,9 @@ case $choice in
 
     # 사용자로부터 설정 정보 입력받기
     echo -e "${YELLOW}기본 디파짓 금액은 1회당 0.00001ETH입니다.${NC}"
-    read -p "${YELLOW}자동 디파짓을 실행하시겠습니까? (true/false):${NC} " deposit_choice
-    read -p "${YELLOW}데일리 디파짓 횟수를 입력하세요 (숫자):${NC} " daily_deposit_count
-    read -p "${YELLOW}네트워크를 선택하세요 (BASE/ARB):${NC} " network_choice
+    read -p "자동 디파짓을 실행하시겠습니까? (true/false): " deposit_choice
+    read -p "데일리 디파짓 횟수를 입력하세요 (숫자): " daily_deposit_count
+    read -p "$네트워크를 선택하세요 (BASE/ARB): " network_choice
 
     # config.js 파일 생성
     {
