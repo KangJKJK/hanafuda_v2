@@ -66,6 +66,7 @@ case $choice in
         echo "  static DISPLAY = \"BLESS\"; // TWIST or BLESS"
         echo "}"
     } > "$WORK/config/config.js"
+    cp $WORK_DIR/config/config.js $WORK_DIR/app/accounts/config.js
     
     # 프록시파일 생성
     echo -e "${YELLOW}프록시 정보를 입력하세요. 입력형식: http://user:pass@ip:port${NC}"
@@ -108,6 +109,7 @@ case $choice in
             done
             echo "];"
         } > $WORK_DIR/accounts/accounts.js
+      cp $WORK_DIR/accounts/accounts.js $WORK_DIR/app/accounts/accounts.js
 
     # 봇 구동
     npm run start
